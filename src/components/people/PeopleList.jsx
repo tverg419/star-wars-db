@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
-function PeopleList(props) {
+function PeopleList({page, setPage}) {
 
     const [people, setPeople] = useState()
-    let page = 1;
     let personId = 0;
     
     const getData = (num) => {

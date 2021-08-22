@@ -1,0 +1,98 @@
+:root {
+    --clr--primary: #F8C829;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('https://wallpaperaccess.com/full/1268183.jpg');
+    color: var(--clr--primary);
+}
+.App-header {
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.header-bg {
+    height: 10vh;
+}
+.nav {
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+.nav a:hover {
+    color: white;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--clr--primary);
+    margin: 5px;
+    font-size: 1.25em;
+}
+.App-footer{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    text-align: center;
+    align-items:center;
+}
+.App-main {
+    width: 75vw;
+    margin: 0 auto;
+}
+.list{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.card{
+    width: 13.2vw;
+    border: 2px solid white;
+    margin: 5px;
+}
+.film-card{
+    width: 22vw;
+    border: 2px solid white;
+    margin: 5px;
+}
+
+.details-container{
+    background-color: black;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.details-container h2{
+    text-align: center;
+    font-size: 3vw;
+}
+.details-container h4{
+    font-size: 1.75vw;
+}
+.details-container p{
+    font-size: 1.5vw;
+    line-height: 2vw;
+}
+.film-image{
+    flex-direction: column;
+    margin: 10px 10px;
+}
+.film-poster {
+    width: 20vw;
+}
+.film-logo{
+    width: 20vw;
+}
+.details {
+    padding: 1.5em;
+}

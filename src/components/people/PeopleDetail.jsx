@@ -11,7 +11,7 @@ function PeopleDetail({ page, person_id }) {
       .then(res => setPeople(res.results))
       .catch(console.error)
       
-    }, [])
+    }, [person_id, page])
 
     if (people) {
         return (
@@ -40,7 +40,7 @@ function PeopleDetail({ page, person_id }) {
     } else {
         return(
             <div>
-                Data Not Fetched
+                <h1>Fetching Data</h1>
             </div>
         );
     }

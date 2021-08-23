@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect }  from 'react';
+import { useState }  from 'react';
 import { Route, Link }          from 'react-router-dom'
 import Nav    from './components/Nav'
 import Home   from './components/Home'
@@ -8,7 +8,7 @@ import FilmsDetail  from './components/films/FilmsDetail'
 import FilmsList    from './components/films/FilmsList'
 import PeopleList   from './components/people/PeopleList'
 import PeopleDetail from './components/people/PeopleDetail'
-import icon from './star-wars-logo.jpg'
+import icon from './logos/star-wars-logo.jpg'
 
 function App() {
 
@@ -47,7 +47,7 @@ function App() {
           }
           />
           
-          <Route exact path='/people/:person_id' 
+          <Route exact path={`/people/page=${page}/:person_id`} 
           render={(routerProps) =>
             <PeopleDetail
             page={page}

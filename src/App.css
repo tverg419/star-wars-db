@@ -9,8 +9,23 @@ body{
     background-image: url('https://wallpaperaccess.com/full/1268183.jpg');
     color: var(--clr--primary);
 }
+button {
+    width: 75px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;   
+}
+
+a {
+    text-decoration: none;
+    margin: none;
+}
+
+/* styling for header */
 .App-header {
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +33,8 @@ body{
     width: 100%;
 }
 .header-bg {
-    height: 10vh;
+    width: 64px;
+    height: 64px;
 }
 .nav {
     justify-content: flex-end;
@@ -33,6 +49,15 @@ body{
     margin: 5px;
     font-size: 1.25em;
 }
+.home h1{
+    background: rgba(0,0,0);
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/* styling for footer */
 .App-footer{
     background: black;
     display: flex;
@@ -41,12 +66,38 @@ body{
     width: 100%;
 }
 .footer{
-    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    width: 100%;
     text-align: center;
-    align-items:center;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    padding: 20px;
 }
+.footer-text{
+    justify-content: center;
+    text-align: center;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.footer p{
+    font-size: 14px;
+    line-height: 1em;
+    margin: 0;
+}
+.footer img{
+    width: 2em;
+}
+
+
+/* styling for main app */
 .App-main {
     width: 75vw;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
 }
 .list{
@@ -55,19 +106,66 @@ body{
     justify-content: space-between;
 }
 .card{
-    width: 13.2vw;
+    width: 13.1vw;
+    height: 30vh;
     border: 2px solid white;
     margin: 5px;
+}
+.card-name{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.card-name h4{
+    margin: 0;
+}
+.card img{
+    width: 100%;
+    max-height: 23vh;    
 }
 .film-card{
     width: 22vw;
     border: 2px solid white;
     margin: 5px;
 }
+.film-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+.film-image{
+    flex-direction: column;
+    margin: 10px 10px;
+}
+.film-poster {
+    width: 20vw;
+}
+.film-logo{
+    width: 20vw;
+}
+.film-card-name{
+    background: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 1em;
+    line-height: 2em;
+}
+.film-card-name p{
+    margin: 0;
+}
 
+.details {
+    width: 100%;
+    padding: 1.5em;
+}
 .details-container{
     background-color: black;
     border: 2px solid white;
+    min-width: 600px;
     display: flex;
     align-items: center;
     padding: 20px;
@@ -83,16 +181,16 @@ body{
     font-size: 1.5vw;
     line-height: 2vw;
 }
-.film-image{
-    flex-direction: column;
-    margin: 10px 10px;
+.button-container{
+    display: flex;
+    justify-content: space-between;
 }
-.film-poster {
-    width: 20vw;
+.people-list{
+    width: 100%;
+    justify-content: center;
 }
-.film-logo{
-    width: 20vw;
-}
-.details {
-    padding: 1.5em;
+.person-image img{
+    width: 250px;
+    height: 300px;
+    object-fit: center;
 }

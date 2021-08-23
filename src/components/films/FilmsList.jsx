@@ -17,16 +17,16 @@ function FilmsList(props) {
     if (films) {
       const filmsList = films.map(f => {
         return (
-            <Link to={`/films/${f.episode_id}`} key={films.episode_id}>
-            <div className= 'film-card'>
+            <Link to={`/films/${f.episode_id}`}>
+            <div className= 'film-card' >
                 <div className='card-image'>
                   <img
-                  src='/'
+                  src={`img//films/${f.episode_id}/card.png`}
                   alt='profile'
                   />
                 </div>
-                <div className='card-name'>
-                  {f.title}
+                <div className='film-card-name' key={films.episode_id}>
+                  <p>{f.title}</p>
                 </div>
               </div>
             </Link>
@@ -42,7 +42,7 @@ function FilmsList(props) {
 
         return (
             <div>
-                <h1>Data Not Fetched</h1>
+                <h1>Fetching Data</h1>
             </div>
         );
     }

@@ -6,7 +6,7 @@ function FilmsDetail({ episode_id }) {
     const [index, setIndex] = useState(0)
     
     const getIndex = (id) => {
-        if (id == 1 || id == 2 || id == 3) {
+        if (id === 1 || id === 2 || id === 3) {
             setIndex(id + 2)
         } else {
             setIndex(id - 4)
@@ -22,7 +22,7 @@ function FilmsDetail({ episode_id }) {
         })
       .catch(console.error)
       
-    }, [])
+    }, [episode_id])
     
     if (films) {
         return (
@@ -39,7 +39,8 @@ function FilmsDetail({ episode_id }) {
             <section className='details'>
                 <h2>{films[index].title}</h2>
                 <h4>Released: {films[index].release_date}</h4>
-                <h4>Director: {films[index].director}, Producer: {films[index].producer}</h4>
+                <h4>Director: {films[index].director}</h4> 
+                <h4>Producer: {films[index].producer}</h4>
                 <p>{films[index].opening_crawl}</p>
             </section>
             
@@ -48,7 +49,7 @@ function FilmsDetail({ episode_id }) {
     } else {
         return (
             <div>
-                <h1>Data Not Fetched</h1>
+                <h1>Fetching Data</h1>
             </div>
         );
     }

@@ -37,10 +37,11 @@ a {
 .header-bg {
     width: 64px;
     height: 64px;
+    margin-left: 2.5em;
 }
 .nav {
     justify-content: flex-end;
-    margin-right: 5%;
+    margin-right: 2.5em;
 }
 .nav a:hover {
     color: white;

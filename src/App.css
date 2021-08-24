@@ -8,6 +8,8 @@ html {
 body{
     background-image: url('https://wallpaperaccess.com/full/1268183.jpg');
     color: var(--clr--primary);
+    font-family: 'Gothic A1', sans-serif;
+font-family: 'Nanum Gothic Coding', monospace;
 }
 button {
     width: 75px;
